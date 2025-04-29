@@ -6,7 +6,7 @@ function FeedbackForm() {
       <div className="xl:container m-auto md:py-8  bg-center bg-cover xl:rounded-[30px] ">
         <div className="relative flex flex-row justify-around items-center xl:px-16 px-6 xl:py-16 py-8 xl:mt-14">
           <div
-            className="absolute z-0 w-full h-[80%] min-h-[500px] bg-[url('./assets/images/scientist.jpg')] bg-center bg-cover xl:rounded-[30px]"
+            className="absolute z-0 w-full h-[80%] min-h-[500px] bg-[url('./images/scientist.jpg')] bg-center bg-cover xl:rounded-[30px]"
           ></div>
           <div className="absolute w-full h-[80%] min-h-[500px]   bg-green-700/50 rounded-[30px] z-1 blur-sm opacity-65 xl:rounded-[30px]"></div>
           <div className="flex justify-between md:gap-4 xl:gap-16">

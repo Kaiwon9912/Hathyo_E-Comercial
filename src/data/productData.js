@@ -2,7 +2,7 @@ const productData = [
     {
       name: "Dây kháng lực Miniband, dây tập mông từ cao su thiên nhiên GoodFit GF911MB",
       brand: "GoodFit",
-      image: "/src/assets/images/product/daykhanh1.webp",
+      image: "/images/product/daykhanh1.webp",
       price: {
         original: "15.000 ₫",
         sale: "9.000 ₫",
@@ -25,7 +25,7 @@ const productData = [
     {
       name: "Nui ống gạo lứt",
       brand: "Tây Nguyên Food",
-      image: "/src/assets/images/product/nuiong.webp",
+      image: "/images/product/nuiong.webp",
       price: {
         original: "71.000 ₫",
         sale: "59.000 ₫",
@@ -45,7 +45,7 @@ const productData = [
     {
       name: "Bánh Dinh Dưỡng Tây Nguyên Food",
       brand: "Tây Nguyên Food",
-      image: "/src/assets/images/product/banhdinhduong.webp",
+      image: "/images/product/banhdinhduong.webp",
       price: {
         original: "75.000 ₫",
         sale: "60.000 ₫",
@@ -65,7 +65,7 @@ const productData = [
     {
       name: "Gạo lứt dẻo điện biên",
       brand: "Tây Nguyên Food",
-      image: "/src/assets/images/product/gaoluc.webp",
+      image: "/images/product/gaoluc.webp",
       price: {
         original: "68.000 ₫",
         sale: "30.000 ₫",
@@ -85,7 +85,7 @@ const productData = [
     {
       name: "Bánh Tráng Gạo Lứt",
       brand: "Tây Nguyên Food",
-      image: "/src/assets/images/product/banhtrang.webp",
+      image: "/images/product/banhtrang.webp",
       price: {
         original: "90.000 ₫",
         sale: "72.000 ₫",
@@ -105,7 +105,7 @@ const productData = [
     {
       name: "Bình nước thể thao GoodFit GF05RA dung tích 800ml, chất liệu nhựa PC an toàn",
       brand: "GoodFit",
-      image: "/src/assets/images/product/binhnuoc.webp",
+      image: "/images/product/binhnuoc.webp",
       price: {
         original: "99.000 ₫",
         sale: "79.000 ₫",
@@ -126,7 +126,7 @@ const productData = [
     {
       name: "Tinh Dầu Cà Phê (Coffee Essential Oil) Heny Garden",
       brand: "Heny Garden",
-      image: "/src/assets/images/product/tinhdau.webp",
+      image: "/images/product/tinhdau.webp",
       price: {
         original: "100.000 ₫",
         sale: "89.000 ₫",
@@ -145,7 +145,7 @@ const productData = [
     {
       name: "Sữa ong chúa tươi - Dalat Cordyceps",
       brand: "Dalat Cordyceps",
-      image: "/src/assets/images/product/suaong.webp",
+      image: "/images/product/suaong.webp",
       price: {
         original: "130.000 ₫",
         sale: "117.000 ₫",

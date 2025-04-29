@@ -5,22 +5,22 @@ function HealthExperts() {
       {
         name: 'BS. Cao Xuân Hồng Hạnh',
         specialization: 'Chuyên Khoa Phụ Sản',
-        image: 'src/assets/images/dr/dr.webp',
+        image: '/images/dr/dr.webp',
       },
       {
         name: 'BS.CKI. Nguyễn Tiến Lực',
         specialization: 'Chuyên Khoa Ngoại Tổng Hợp',
-        image: 'src/assets/images/dr/dr2.webp',
+        image: '/images/dr/dr2.webp',
       },
       {
         name: 'BS.CKI. Cao Thanh Tùng',
         specialization: 'Chuyên Khoa Phụ Sản',
-        image: 'src/assets/images/dr/dr3.webp',
+        image: '/images/dr/dr3.webp',
       },
       {
         name: 'BS.CKI. Nguyễn Lê Hồng Vân',
         specialization: 'Chuyên Khoa Dinh Dưỡng',
-        image: 'src/assets/images/dr/dr4.webp',
+        image: '/images/dr/dr4.webp',
       },
     ];
   

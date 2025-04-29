@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { User, ShoppingCart, Bell, Menu } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
-import logo from '../assets/images/logo.svg';
+import logo from '/images/logo.svg';
 import AuthModal from './AuthModal'; // Thêm dòng này
 import { useTheme } from '../contexts/ThemeContext'; // Thêm dòng này
 import { Sun, Moon } from 'lucide-react'; 

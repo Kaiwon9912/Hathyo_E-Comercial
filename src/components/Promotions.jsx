@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import promotionImage from '/src/assets/images/promotionBanner.webp';
+import promotionImage from '/images/promotionBanner.webp';
 
 function Promotions() {
   return (

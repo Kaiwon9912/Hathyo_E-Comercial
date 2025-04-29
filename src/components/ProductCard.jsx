@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
       {/* Sale Label */}
       <div className="absolute -top-3 -left-1 w-28 h-20 z-10 flex items-start justify-start"
         style={{
-          backgroundImage: 'url("/src/assets/images/ribbon.png")',
+          backgroundImage: 'url("/images/ribbon.png")',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'contain',
         }}
