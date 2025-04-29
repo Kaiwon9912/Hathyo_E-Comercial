@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: 249, 250 ,251;
+    --primary-hover: 0 0 0;
+    --secondary: 249 250 251;
+    --secondary-hover: 22 101 52;
+    --textPrimary: 55 65 81;
+    --textSecondary: 0 0 0;
+    --bgPrimary: 31, 125, 83 
+    
+
+    
+  }
+  
+  /* Các quy tắc cho dark mode */
+  .dark {
+    --primary: 24, 35 ,15;
+    --secondary:21 128 61;
+    --primary-hover: 22 101 52;
+    --textPrimary: 255 255 255;
+    --textSecondary: 255 255 255;
+    --bgPrimary: 24 35 15;
+  
+  }
+
+ 

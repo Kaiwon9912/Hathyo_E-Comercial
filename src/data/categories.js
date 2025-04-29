@@ -1,0 +1,101 @@
+export const categories = [
+    {
+      id: 1,
+      name: "Voucher, dịch vụ",
+      subcategories: [
+        "Khóa học",
+        "Nhà hàng và ăn uống",
+        "Du lịch và khách sạn",
+        "Sự kiện, giải trí và thể thao",
+        "Sức khỏe, làm đẹp",
+      ],
+    },
+    {
+      id: 2,
+      name: "Thực phẩm, đồ uống",
+      subcategories: [
+        "Thực phẩm chức năng",
+        "Đồ uống",
+        "Thực phẩm khô, đóng hộp",
+        "Thực phẩm tươi sống và đông lạnh",
+        "Nguyên liệu nấu ăn",
+        "Thực phẩm từ sữa và đồ lạnh",
+        "Ăn vặt lành mạnh",
+      ],
+    },
+    {
+      id: 3,
+      name: "Thể thao, du lịch",
+      subcategories: [
+        "Giày thể thao",
+        "Thời trang thể thao",
+        "Phụ kiện thể thao",
+        "Vali",
+        "Túi du lịch",
+        "Phụ kiện du lịch và dã ngoại",
+        "Khác",
+      ],
+    },
+    {
+      id: 4,
+      name: "Thiết bị điện tử",
+      subcategories: [
+        "Thiết bị đeo thông minh",
+        "Phụ kiện điện tử",
+        "Khác",
+      ],
+    },
+    {
+      id: 5,
+      name: "Sức khỏe",
+      subcategories: [
+        "Dụng cụ massage và trị liệu",
+        "Dụng cụ theo dõi sức khỏe",
+        "Dụng cụ sơ cứu",
+        "Chăm sóc tai, mũi, họng",
+        "Hỗ trợ cải thiện tinh thần",
+        "Hỗ trợ tình dục",
+        "Khác",
+      ],
+    },
+    {
+      id: 6,
+      name: "Nhà cửa, đời sống",
+      subcategories: [
+        "Dụng cụ nhà bếp",
+        "Chăm sóc nhà cửa",
+        "Trang trí nhà cửa",
+        "Nội thất",
+        "Chăm sóc giấc ngủ",
+      ],
+    },
+    {
+      id: 7,
+      name: "Mẹ và Bé",
+      subcategories: [
+        "Tã, bỉm",
+        "Đồ chơi cho bé",
+        "Dụng cụ phòng tắm, chăm sóc cơ thể bé",
+        "Đồ dùng phòng ngủ, chăm sóc giấc ngủ bé",
+        "Đồ dùng bảo vệ bé",
+        "Chăm sóc sức khỏe bé",
+        "Dinh dưỡng cho mẹ",
+        "Chăm sóc mẹ bầu và sau sinh",
+      ],
+    },
+    {
+      id: 8,
+      name: "Làm đẹp",
+      subcategories: [
+        "Chăm sóc cơ thể",
+        "Chăm sóc da mặt",
+        "Chăm sóc tóc",
+        "Chăm sóc răng miệng",
+        "Chăm sóc phụ nữ",
+        "Chăm sóc nam giới",
+        "Trang điểm",
+        "Dụng cụ, phụ kiện làm đẹp",
+      ],
+    },
+  ];
+  

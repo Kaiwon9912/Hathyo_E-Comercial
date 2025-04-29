@@ -1,0 +1,28 @@
+{
+    "header": {
+      "store": "Store",
+      "nutrients": "Nutrition",
+      "workout": "Workout",
+      "mental": "Mental",
+      "problem": "Problem",
+      "signin": "Sign in",
+      "signup": "Sign up",
+      "logout": "Log out",
+      "register": "Register",
+      "areadly": "Already have an account?",
+      "notregister": "Don't have an account?",
+      "password": "Password"
+    },
+    "categories": {
+      "all_products": "All Products",
+      "voucher_service": "Vouchers & Services",
+      "food_beverage": "Food & Beverages",
+      "sports_travel": "Sports & Travel",
+      "electronics": "Electronics",
+      "health": "Health",
+      "home_life": "Home & Lifestyle",
+      "mom_baby": "Mom & Baby",
+      "beauty": "Beauty"
+    }
+  }
+  

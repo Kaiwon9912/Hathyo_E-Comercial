@@ -1,0 +1,32 @@
+
+{
+    "header": 
+    {
+        "store": "Cửa hàng",
+        "nutrients": "Dinh dưỡng",
+        "mental": "Tinh thần",
+        "workout": "Hoạt động",
+        "problem": "Vấn đề",
+        "signin": "Đăng nhập",
+        "signup": "Đăng ký",
+        "logout": "Đăng xuất",
+        "register": "Đăng ký",
+        "areadly": "Đã có tài khoản?",
+        "notregister": "Chưa có tài khoản?",
+        "password": "Mật khẩu"
+    },
+    "categories": 
+    {
+      "all_products": "Tất cả sản phẩm",
+      "voucher_service": "Voucher, dịch vụ",
+      "food_beverage": "Thực phẩm, đồ uống",
+      "sports_travel": "Thể thao, du lịch",
+      "electronics": "Thiết bị điện tử",
+      "health": "Sức khỏe",
+      "home_life": "Nhà cửa, đời sống",
+      "mom_baby": "Mẹ và Bé",
+      "beauty": "Làm đẹp"
+    }
+
+}
+  
