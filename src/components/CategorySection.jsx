@@ -4,7 +4,7 @@ import anessa from '../assets/categories/anessa.webp';
 import nhietke from '../assets/categories/nhietke.webp';
 import vitamin from '../assets/categories/vitamin.webp';
 import sensodyne from '../assets/categories/sensodyne.webp';
-
+import { useTranslation } from 'react-i18next';
 const categories = [
   {
     id: 1,
@@ -50,7 +50,7 @@ const categories = [
 
 function CategorySection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const { t, i18n } = useTranslation();
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % categories.length);
   };
@@ -63,7 +63,7 @@ function CategorySection() {
     <section className="py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-textPrimary mb-8 text-center">
-          Danh mục sản phẩm
+        {t('home.product_category')}
         </h2>
         
         {/* Mobile Carousel */}
@@ -86,7 +86,7 @@ function CategorySection() {
                     <h3 className="text-lg font-bold text-gray-800 mb-2">{category.name}</h3>
                     <p className="text-green-700 font-bold text-lg mb-4">{category.firstProduct.price}</p>
                     <button className="w-full bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-300">
-                      Mua ngay
+                    {t('home.buy_now')}
                     </button>
                   </div>
                 </div>
@@ -124,13 +124,13 @@ function CategorySection() {
                 <div className="absolute top-6 left-6 z-10">
                   <div className="flex flex-col gap-3">
                     <div className="flex flex-col">
-                      <div className="font-normal">Dược mỹ phẩm</div>
-                      <div className="text-xl font-semibold">Kem Chống Nắng</div>
+                      <div className="font-normal">{t('home.SkinCare')}</div>
+                      <div className="text-xl font-semibold">{t('home.Suncream')}</div>
                     </div>
-                    <div className="text-md text-orange-600">Chỉ từ 200.000đ</div>
+                    <div className="text-md text-orange-600">{t('home.only')} 200.000đ</div>
                     <button className="flex flex-row text-base items-center py-2.5 text-md bg-green-700  hover:bg-green-800 rounded-full">
                       <div className="text-center w-full px-5 xl:px-7 body-sm-semibold text-white font-bold">
-                        Mua ngay
+                      {t('home.buy_now')}
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className="inline-block ml-2">
                           <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.333 10h13.334m0 0-5-5m5 5-5 5"/>
                         </svg>
@@ -150,12 +150,12 @@ function CategorySection() {
               <div className="relative h-full bg-[#054627] rounded-xl shadow-xl">
                 <div className="absolute top-6 left-6 z-10">
                   <div className="flex flex-col gap-3 text-white">
-                    <div className="font-normal text-lg -text">Thiết Bị Y Tế</div>
-                    <div className="text-xl font-semibold">Nhiệt Kế</div>
-                    <div className="text-md text-Orange/200">Chỉ từ 150.000đ</div>
+                    <div className="font-normal text-lg -text">{t('home.Medical_equipment')}</div>
+                    <div className="text-xl font-semibold">{t('home.Thermometer')}</div>
+                    <div className="text-md text-Orange/200">{t('home.only')} 150.000đ</div>
                     <button className="flex flex-row text-base items-center  py-1.5 text-md shadow-Shadow/xs bg-white hover:bg-gray-100 border-2 border-green-700 rounded-full">
                       <div className="text-center w-full px-5 xl:px-7 body-sm-semibold text-green-700 font-bold border-green-700">
-                        Mua ngay
+                      {t('home.buy_now')}
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className="inline-block">
                           <path stroke="#0B8249" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.333 10h13.334m0 0-5-5m5 5-5 5"/>
                         </svg>
@@ -175,12 +175,12 @@ function CategorySection() {
               <div className="relative h-1/2 bg-[#D1FBE7] rounded-xl shadow-xl border-4 border-secondary">
                 <div className="absolute top-6 left-6 z-10 ">
                   <div className="flex flex-col">
-                    <div className="font-normal  text-gray-500">Thực phẩm chức năng</div>
-                    <div className="text-xl font-semibold capitalize">Vitamin & Khoáng chất</div>
-                    <div className="text-md  text-gray-500">Chỉ từ 100.000đ</div>
+                    <div className="font-normal  text-gray-500">  {t('home.FunctionalFood')} </div>
+                    <div className="text-xl font-semibold capitalize">{t('home.Vitamin_Mineral')}</div>
+                    <div className="text-md  text-gray-500">      {t('home.only')} 100.000đ</div>
                     <button className="flex mt-1 flex-row text-base items-center py-1.5 text-md  bg-white border-green-700 border-2 w-[130px]  hover:bg-gray-50 rounded-full">
                       <div className="text-center w-full  text-green-700 font-semibold border-green-700">
-                        Mua ngay
+                      {t('home.buy_now')}
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className="inline-block">
                           <path stroke="#0B8249" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.333 10h13.334m0 0-5-5m5 5-5 5"/>
                         </svg>
@@ -198,12 +198,12 @@ function CategorySection() {
               <div className="relative h-1/2 border-4 border-secondary rounded-xl rounded-xl shadow-xl">
                 <div className="absolute top-6 left-6 z-10">
                   <div className="flex flex-col ">
-                    <div className="font-normal  text-textPrimary ">Chăm sóc răng miệng</div>
-                    <div className="text-xl font-semibold text-textPrimary capitalize" >Kem đánh răng</div>
+                    <div className="font-normal  text-textPrimary "> {t('home.Dental_care')}</div>
+                    <div className="text-xl font-semibold text-textPrimary capitalize" > {t('home.Toothpaste')}</div>
                     <div className="text-md text-textSecondary">Giảm đến 30%</div>
                     <button className="flex mt-1 flex-row text-base items-center py-1.5 text-md  bg-white border-green-700 border-2 w-[130px]  hover:bg-gray-50 rounded-full">
                       <div className="text-center w-full  text-green-700 font-semibold border-green-700">
-                        Mua ngay
+                      {t('home.buy_now')}
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" className="inline-block">
                           <path stroke="#0B8249" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.333 10h13.334m0 0-5-5m5 5-5 5"/>
                         </svg>

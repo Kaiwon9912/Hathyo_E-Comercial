@@ -13,8 +13,9 @@
       "notregister": "Don't have an account?",
       "password": "Password"
     },
-    "categories": {
-      "all_products": "All Products",
+    
+    "product": {
+      "all": "All Products",
       "voucher_service": "Vouchers & Services",
       "food_beverage": "Food & Beverages",
       "sports_travel": "Sports & Travel",
@@ -22,7 +23,125 @@
       "health": "Health",
       "home_life": "Home & Lifestyle",
       "mom_baby": "Mom & Baby",
-      "beauty": "Beauty"
-    }
+      "beauty": "Beauty",
+      "relevant": "Relevant",
+      "newest": "Newest",
+      "best_selling": "Best Selling",
+      "Low_to_high": "Low to High",
+      "High_to_low": "High to Low",
+      "sort": "Sort by"
+    },
+    "subcategory": {
+      "course": "Course",
+      "restaurant": "Restaurant & Dining",
+      "travel": "Travel & Hotel",
+      "entertainment": "Events, Entertainment & Sports",
+      "health_beauty": "Health & Beauty",
+
+      "functional_food": "Functional Food",
+      "drinks": "Drinks",
+      "canned": "Canned & Dry Food",
+      "fresh": "Fresh & Frozen Food",
+      "ingredients": "Cooking Ingredients",
+      "dairy": "Dairy & Cold Products",
+      "healthy_snacks": "Healthy Snacks",
+
+      "sport_shoes": "Sport Shoes",
+      "sport_fashion": "Sport Fashion",
+      "sport_accessories": "Sport Accessories",
+      "suitcase": "Suitcase",
+      "travel_bag": "Travel Bag",
+      "travel_gear": "Travel & Outdoor Gear",
+
+      "smart_devices": "Smart Wearables",
+      "electronic_accessories": "Electronic Accessories",
+
+      "massage_tools": "Massage & Therapy Devices",
+      "health_monitoring": "Health Monitoring Devices",
+      "first_aid": "First Aid",
+      "ear_nose_throat": "Ear, Nose & Throat Care",
+      "mental_support": "Mental Health Support",
+      "sex_support": "Sexual Wellness",
+
+      "kitchen_tools": "Kitchen Tools",
+      "home_care": "Home Care",
+      "home_decor": "Home Decoration",
+      "furniture": "Furniture",
+      "sleep_care": "Sleep Care",
+
+      "diapers": "Diapers",
+      "baby_toys": "Baby Toys",
+      "baby_bath": "Baby Bath & Body Care",
+      "baby_sleep": "Baby Bedding & Sleep Care",
+      "baby_protection": "Baby Protection Gear",
+      "baby_health": "Baby Health Care",
+      "mom_nutrition": "Nutrition for Mom",
+      "mom_care": "Maternity & Postpartum Care",
+
+      "body_care": "Body Care",
+      "facial_care": "Facial Care",
+      "hair_care": "Hair Care",
+      "dental_care": "Dental Care",
+      "women_care": "Women's Care",
+      "men_care": "Men's Care",
+      "makeup": "Makeup",
+      "beauty_tools": "Beauty Tools & Accessories",
+
+      "other": "Other"
+    },
+    "home": {
+      "product_category": "Product Categories",
+      "buy_now": "Buy Now",
+      "only": "Starting at",
+      "healthExperts": "Health Experts",
+      "Dr": "Dr.",
+      "Suncream": "Sunscreen",
+      "FunctionalFood": "Functional Food",
+      "Vitamin_Mineral": "Vitamins & Minerals",
+      "SkinCare": "Skincare",
+      "Medical_equipment": "Medical Equipment",
+      "Thermometer": "Thermometer",
+      "Dental_care": "Dental Care",
+      "Toothpaste": "Toothpaste",
+      "promotions": "Promotions",
+      "obstetrics": "Obstetrics and Gynecology",
+      "general_surgery": "General Surgery",
+      "nutrition": "Nutrition"
+    },
+    "banner": {
+      "Search": "Search",
+      "Search_placeholder": "Search anything on Hathyo",
+      "quotes1": "When we strive to become better than we are, everything around us becomes better too",
+      "author1": "Paulo Coelho",
+      "quotes2": "Healthy citizens are the greatest asset any country can have",
+      "author2": "Winston Churchill",
+      "quotes33": "Whether you start today or someday — it's your choice",
+      "author3": "Paulo Coelho",
+      "quotes4": "Health is the greatest wealth of humankind",
+      "author4": "Virgil"
+    },
+    "feedback": {
+      "suggestions": "Feedback",
+      "suggestions_placeholder": "Enter your feedback here",
+      "name_placeholder": "Enter your name",
+      "email_placeholder": "Enter your email",
+      "send_suggestion": "Send Feedback",
+      "thank_you": "Thank you for your valuable feedback, which helps us continuously improve our services. Wishing you joyful and healthy days ahead!",
+      "title": "Your Feedback Matters!",
+      "p1": "At Hathyo, we not only want you to be satisfied with our products but also aim to give you a complete shopping experience. Your suggestions are our motivation to keep improving. So don't hesitate to share any ideas or feedback!",
+      "p2": "If you need more information or have questions, feel free to contact us. The Hathyo team is always ready to support you!"
+    },
+    "footer": {
+        "title": "Hathyo",
+        "desc": "Helping you stay healthier with scientific and wholesome products.",
+        "about": "About Hathyo",
+        "intro": "About Hathyo",
+        "tools": "Hathyo's happy tools",
+        "career": "Careers at Hathyo",
+        "user": "User",
+        "copyright": "© 2025 Hathyo. All rights reserved."
+      }
+    
+    
   }
   

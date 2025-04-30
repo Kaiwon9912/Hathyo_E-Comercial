@@ -3,6 +3,7 @@ import { User, ShoppingCart, Bell, Menu } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
 import logo from '/images/logo.svg';
+import logo_icon from '/images/logo_icon.svg';
 import AuthModal from './AuthModal'; // Thêm dòng này
 import { useTheme } from '../contexts/ThemeContext'; // Thêm dòng này
 import { Sun, Moon } from 'lucide-react'; 
@@ -42,19 +43,26 @@ function Header() {
       </div>
       <div className="container mx-auto flex items-center justify-between py-2 px-6">
         
-        <Link to="/" className="">
+        <Link to="/" className="hidden lg:block">
           <img src={logo} width={167} height={62} alt="Logo" />
+        </Link>
+        <Link to="/" className="lg:hidden">
+          <img src={logo_icon} width={51} height={51} alt="Logo" />
         </Link>
 
         {/* Mobile Icons and Menu Button */}
         <div className="flex items-center space-x-4 lg:hidden">
           <div className="relative">
-            <button className="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+            <button className="p-2 rounded-lg bg-lime-50 hover:bg-gray-100 transition-colors">
               <ShoppingCart className="text-gray-600" size={24} />
-              <span className="absolute -top-1 -right-1 bg-green-700 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                3
-              </span>
             </button>
+            <button onClick={toggleTheme} className="p-2 rounded-full  bg-lime-50 ">
+              {isDarkMode ? (
+                <Sun size={24} className="text-yellow-500" />
+              ) : (
+                <Moon size={24} className="text-gray-600" />
+              )}
+             </button>
           </div>
 
 
@@ -84,6 +92,7 @@ function Header() {
                 <button className="p-2 rounded-lg hover:bg-gray-100 transition-colors">
                   <ShoppingCart className="text-gray-600" size={16} />
                 </button>
+                
               </div>
 
     

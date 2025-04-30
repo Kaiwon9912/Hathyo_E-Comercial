@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { categories, postsByCategory } from "../data/topicData";
-
+import { useTranslation } from 'react-i18next';
 export default function TopicPage() {
   const { category } = useParams();
   const [selectedCategory, setSelectedCategory] = useState("");
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     if (category && categories.includes(category)) {
       setSelectedCategory(category);

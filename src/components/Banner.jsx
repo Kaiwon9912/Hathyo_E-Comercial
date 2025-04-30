@@ -3,28 +3,28 @@ import { Search } from 'lucide-react';
 import banner1 from '/images/banner/banner1.jpg';
 import banner2 from '/images/banner/banner2.jpg';
 import banner3 from '/images/banner/banner3.jpg';
-import CategorySection from './CategorySection';
+import { useTranslation } from 'react-i18next';
 
 const quotes = [
   {
-    text: "Khi chúng ta cố gắng để tốt hơn ta của hiện tại, mọi thứ xung quanh ta cũng tốt hơn",
-    author: "Paulo Coelho"
+    text: "banner.quotes1",
+    author: "banner.author1"
   },
   {
-    text: "Những công dân khỏe mạnh là tài sản lớn nhất mà bất kỳ quốc gia nào cũng có được",
-    author: " Winston Churchill"
+text: "banner.quotes1",
+    author: "banner.author1"
   },
   {
-    text: "Sức khỏe là món quà lớn nhất, sự hài lòng là của cải lớn nhất, sự chung thủy là mối quan hệ tốt nhất",
-    author: "Buddha"
+    text: "banner.quotes2",
+    author: "banner.author2"
   },
   {
-    text: "Cơ thể chúng ta là khu vườn - ý chí của chúng ta là những người làm vườn",
-    author: "William Shakespeare"
+    text: "banner.quotes3",
+    author: "banner.author3"
   },
   {
-    text: "Bắt đầu từ hôm nay hay một ngày nào đó là do bạn",
-    author: "Paolo Coelho"
+    text: "banner.quotes4",
+    author: "banner.author4"
   }
 ];
 
@@ -32,7 +32,7 @@ function Banner() {
   const [currentBanner, setCurrentBanner] = useState('');
   const [currentQuote, setCurrentQuote] = useState({ text: '', author: '' });
   const [currentDate, setCurrentDate] = useState('');
-
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     // Random banner
     const banners = [banner1, banner2, banner3];
@@ -43,14 +43,20 @@ function Banner() {
     const randomQuoteIndex = Math.floor(Math.random() * quotes.length);
     setCurrentQuote(quotes[randomQuoteIndex]);
 
-    // Update date every second
+
     const updateDate = () => {
       const now = new Date();
-      const days = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
-      const dayName = days[now.getDay()];
+      const days = {
+        vi: ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'],
+        en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+      };
+    
+      const lang = i18n.language || 'vi'; 
+      const dayName = days[lang][now.getDay()];
       const formattedDate = `${dayName}, ${now.getDate()}/${now.getMonth() + 1}/${now.getFullYear()}`;
       setCurrentDate(formattedDate);
     };
+    
 
     updateDate();
     const interval = setInterval(updateDate, 1000);
@@ -65,7 +71,7 @@ function Banner() {
           <img
             className="w-full h-full xl:aspect-[1280/520] object-cover"
             alt="main banner"
-            src={currentBanner}
+            src={currentBanner?currentBanner : banner1}
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-20 flex items-center justify-center text-white z-10" />
         </div>
@@ -133,22 +139,22 @@ function Banner() {
               </div>
               <div className="flex flex-col gap-2">
                 <h5 className="text-white quote text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
-                  "{currentQuote.text}"
+                  {t(currentQuote.text)}"
                 </h5>
                 <div className="text-orange-200 text-lg sm:text-xl md:text-2xl font-bold">
-                  - {currentQuote.author}
+                  -  {t(currentQuote.author)}"
                 </div>
               </div>
               <div className="xl:flex">
                 <div className="relative w-full">
                   <input
                     type="text"
-                    placeholder="Tìm kiếm mọi thứ trên Hathyo"
+                    placeholder={t("banner.Search_placeholder")}
                     className="w-full pl-4 pr-32 py-2 sm:py-3 text-base sm:text-lg rounded-xl bg-[#F5RBEE] text-green-800 bg-green-50 placeholder-green-800 border-2 border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-white/50 transition-all duration-300"
                   />
                   <button className="absolute right-2 top-1/2 -translate-y-1/2 px-3 sm:px-4 py-1.5 sm:py-2 bg-green-700 hover:bg-green-800 text-white rounded-lg flex items-center gap-1 sm:gap-2 transition-all duration-300">
                     <Search className="w-4 h-4 sm:w-5 sm:h-5" size={20} />
-                    <span className="font-semibold text-xs sm:text-sm">Tìm kiếm</span>
+                    <span className="font-semibold text-xs sm:text-sm">{t("banner.Search")}</span>
                   </button>
                 </div>
               </div>

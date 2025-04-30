@@ -1,101 +1,100 @@
 export const categories = [
-    {
-      id: 1,
-      name: "Voucher, dịch vụ",
-      subcategories: [
-        "Khóa học",
-        "Nhà hàng và ăn uống",
-        "Du lịch và khách sạn",
-        "Sự kiện, giải trí và thể thao",
-        "Sức khỏe, làm đẹp",
-      ],
-    },
-    {
-      id: 2,
-      name: "Thực phẩm, đồ uống",
-      subcategories: [
-        "Thực phẩm chức năng",
-        "Đồ uống",
-        "Thực phẩm khô, đóng hộp",
-        "Thực phẩm tươi sống và đông lạnh",
-        "Nguyên liệu nấu ăn",
-        "Thực phẩm từ sữa và đồ lạnh",
-        "Ăn vặt lành mạnh",
-      ],
-    },
-    {
-      id: 3,
-      name: "Thể thao, du lịch",
-      subcategories: [
-        "Giày thể thao",
-        "Thời trang thể thao",
-        "Phụ kiện thể thao",
-        "Vali",
-        "Túi du lịch",
-        "Phụ kiện du lịch và dã ngoại",
-        "Khác",
-      ],
-    },
-    {
-      id: 4,
-      name: "Thiết bị điện tử",
-      subcategories: [
-        "Thiết bị đeo thông minh",
-        "Phụ kiện điện tử",
-        "Khác",
-      ],
-    },
-    {
-      id: 5,
-      name: "Sức khỏe",
-      subcategories: [
-        "Dụng cụ massage và trị liệu",
-        "Dụng cụ theo dõi sức khỏe",
-        "Dụng cụ sơ cứu",
-        "Chăm sóc tai, mũi, họng",
-        "Hỗ trợ cải thiện tinh thần",
-        "Hỗ trợ tình dục",
-        "Khác",
-      ],
-    },
-    {
-      id: 6,
-      name: "Nhà cửa, đời sống",
-      subcategories: [
-        "Dụng cụ nhà bếp",
-        "Chăm sóc nhà cửa",
-        "Trang trí nhà cửa",
-        "Nội thất",
-        "Chăm sóc giấc ngủ",
-      ],
-    },
-    {
-      id: 7,
-      name: "Mẹ và Bé",
-      subcategories: [
-        "Tã, bỉm",
-        "Đồ chơi cho bé",
-        "Dụng cụ phòng tắm, chăm sóc cơ thể bé",
-        "Đồ dùng phòng ngủ, chăm sóc giấc ngủ bé",
-        "Đồ dùng bảo vệ bé",
-        "Chăm sóc sức khỏe bé",
-        "Dinh dưỡng cho mẹ",
-        "Chăm sóc mẹ bầu và sau sinh",
-      ],
-    },
-    {
-      id: 8,
-      name: "Làm đẹp",
-      subcategories: [
-        "Chăm sóc cơ thể",
-        "Chăm sóc da mặt",
-        "Chăm sóc tóc",
-        "Chăm sóc răng miệng",
-        "Chăm sóc phụ nữ",
-        "Chăm sóc nam giới",
-        "Trang điểm",
-        "Dụng cụ, phụ kiện làm đẹp",
-      ],
-    },
-  ];
-  
+  {
+    id: 1,
+    name: "product.voucher_service",
+    subcategories: [
+      "subcategory.course",
+      "subcategory.restaurant",
+      "subcategory.travel",
+      "subcategory.entertainment",
+      "subcategory.health_beauty"
+    ]
+  },
+  {
+    id: 2,
+    name: "product.food_beverage",
+    subcategories: [
+      "subcategory.functional_food",
+      "subcategory.drinks",
+      "subcategory.canned",
+      "subcategory.fresh",
+      "subcategory.ingredients",
+      "subcategory.dairy",
+      "subcategory.healthy_snacks"
+    ]
+  },
+  {
+    id: 3,
+    name: "product.sports_travel",
+    subcategories: [
+      "subcategory.sport_shoes",
+      "subcategory.sport_fashion",
+      "subcategory.sport_accessories",
+      "subcategory.suitcase",
+      "subcategory.travel_bag",
+      "subcategory.travel_gear",
+      "subcategory.other"
+    ]
+  },
+  {
+    id: 4,
+    name: "product.electronics",
+    subcategories: [
+      "subcategory.smart_devices",
+      "subcategory.electronic_accessories",
+      "subcategory.other"
+    ]
+  },
+  {
+    id: 5,
+    name: "product.health",
+    subcategories: [
+      "subcategory.massage_tools",
+      "subcategory.health_monitoring",
+      "subcategory.first_aid",
+      "subcategory.ear_nose_throat",
+      "subcategory.mental_support",
+      "subcategory.sex_support",
+      "subcategory.other"
+    ]
+  },
+  {
+    id: 6,
+    name: "product.home_life",
+    subcategories: [
+      "subcategory.kitchen_tools",
+      "subcategory.home_care",
+      "subcategory.home_decor",
+      "subcategory.furniture",
+      "subcategory.sleep_care"
+    ]
+  },
+  {
+    id: 7,
+    name: "product.mom_baby",
+    subcategories: [
+      "subcategory.diapers",
+      "subcategory.baby_toys",
+      "subcategory.baby_bath",
+      "subcategory.baby_sleep",
+      "subcategory.baby_protection",
+      "subcategory.baby_health",
+      "subcategory.mom_nutrition",
+      "subcategory.mom_care"
+    ]
+  },
+  {
+    id: 8,
+    name: "product.beauty",
+    subcategories: [
+      "subcategory.body_care",
+      "subcategory.facial_care",
+      "subcategory.hair_care",
+      "subcategory.dental_care",
+      "subcategory.women_care",
+      "subcategory.men_care",
+      "subcategory.makeup",
+      "subcategory.beauty_tools"
+    ]
+  }
+];

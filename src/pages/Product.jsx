@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { categories } from "../data/categories";
-import { ChevronDown, ChevronRight, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronRight, ChevronUp, Menu } from "lucide-react";
 import { productData } from "../data/productData";
 import ProductCard from "../components/ProductCard";
+import { useTranslation } from 'react-i18next';
 function Product() {
   const [openCategoryId, setOpenCategoryId] = useState(null);
   const [sort, setSort] = useState("Liên quan");
-
-  const options = ["Liên quan", "Mới nhất", "Bán chạy"];
+  const { t, i18n } = useTranslation();
+  const options = ["product.relevant", "product.newest", "product.best_selling"];
   const toggleCategory = (id) => {
     setOpenCategoryId(openCategoryId === id ? null : id);
   };
@@ -18,9 +19,9 @@ function Product() {
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
           <div className="col-span-1">
 <div className="bg-primary text-textPrimary rounded-lg shadow-md p-1 border-2 border-secondary ">
-            <h1 className="font-semibold flex p-1 my-2 ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class=""><path fill="#000" d="M8 9a.97.97 0 0 1-.712-.288A.97.97 0 0 1 7 8q0-.424.288-.712A.97.97 0 0 1 8 7h12q.425 0 .713.288.288.289.287.712 0 .424-.288.713A.96.96 0 0 1 20 9zm0 4a.97.97 0 0 1-.712-.288A.97.97 0 0 1 7 12q0-.424.288-.712A.97.97 0 0 1 8 11h12q.425 0 .713.288T21 12q0 .424-.288.713A.96.96 0 0 1 20 13zm0 4a.97.97 0 0 1-.712-.288A.97.97 0 0 1 7 16q0-.424.288-.712A.97.97 0 0 1 8 15h12q.425 0 .713.288T21 16q0 .424-.288.713A.96.96 0 0 1 20 17zM4 9a.97.97 0 0 1-.712-.288A.97.97 0 0 1 3 8q0-.424.288-.712A.97.97 0 0 1 4 7q.423 0 .713.288.29.289.287.712a.99.99 0 0 1-.288.713A.95.95 0 0 1 4 9m0 4a.97.97 0 0 1-.712-.288A.97.97 0 0 1 3 12q0-.424.288-.712A.97.97 0 0 1 4 11q.423 0 .713.288T5 12a.99.99 0 0 1-.288.713A.95.95 0 0 1 4 13m0 4a.97.97 0 0 1-.712-.288A.97.97 0 0 1 3 16q0-.424.288-.712A.97.97 0 0 1 4 15q.423 0 .713.288T5 16a.99.99 0 0 1-.288.713A.95.95 0 0 1 4 17"></path></svg>
-            Tất cả sản phẩm
+            <h1 className="font-semibold flex p-1 my-2 items-center ">
+              <Menu size={16} className="mr-2" />
+            {t('product.all')}
           </h1>
             {categories.map((category) => (
               <div key={category.id} className="mb-4">
@@ -32,7 +33,7 @@ function Product() {
                       : "text-textPrimary"
                   }`}
                 >
-                  {category.name}
+                  {t(category.name)} 
                   {openCategoryId === category.id ? (
                     <ChevronUp size={18} />
                   ) : (
@@ -46,7 +47,7 @@ function Product() {
                         key={index}
                         className="flex cursor-pointer text-textPrimary  text-xs items-center justify-between hover:text-green-600 p-2 rounded-md hover:bg-lime-300/20 transition-colors duration-200 "
                       >
-                        {subcategory} 
+                        {t(subcategory)} 
                       </li>
                     ))}
                   </ul>
@@ -60,7 +61,7 @@ function Product() {
           <div className="col-span-1 md:col-span-5">
             <div className="space-x-2 font-semibold bg-slate-100 p-2 flex text-xs justify-end items-center gap-2 rounded-lg mb-8 ">
           
-                <div className="font-semibold">Sắp xếp theo</div>
+                <div className="font-semibold">{t("product.sort")}</div>
                 {options.map((option) => (
                   <div
                     key={option}
@@ -69,15 +70,15 @@ function Product() {
                       sort === option ? "bg-green-700 text-white" : "bg-white border shadow-sm"
                     }`}
                   >
-                    {option}
+                   {t(option)}
                   </div>
                 ))}
             <div>
               <div className="flex items-center gap-2">
       
                 <select className="border border-gray-300 rounded-md p-2 text-xs focus:outline-none focus:ring-2 focus:ring-green-600">
-                  <option value="12">Giá: Thấp đến cao</option>
-                  <option value="24">Giá: Cao đến thấp</option>
+                  <option >{t("product.High_to_low")}</option>
+                  <option >{t("product.Low_to_high")}</option>
                 </select>
     
               </div>

@@ -4,18 +4,35 @@ import FeedbackForm from '../components/FeedbackForm';
 
 
 import CategorySection from '../components/CategorySection';
-import ProductSection from '../components/ProductSection';
+import ProductCard from '../components/ProductCard';
 import Promotions from '../components/Promotions';
+import { productData } from "../data/productData";
 
 function Home() {
   return (
-    <div className="bg-primary">
+    <div className="">
       <Banner />
       <div className="container mx-auto px-4">
         <CategorySection />
       <div className='grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4'>
       <div className='col-span-4'>
-        <ProductSection />
+      <section className="px-4 bg-primary py-8 flex space-around items-start gap-6 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {productData.map((product, index) => {
+          const safeProduct = {
+            ...product,
+            image: product.image || "/src/assets/images/default-product.jpg", // default fallback
+          };
+          return (
+            <ProductCard
+              key={index}
+              product={safeProduct}
+            />
+          );
+        })}
+      </div>
+      
+    </section>
       </div>
       <div className='col-span-1'>
         <Promotions />

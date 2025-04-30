@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
     navigate("/detail", { state: { product } });
   };
   return (
-    <div onClick={handleClick} className="relative rounded-xl w-auto shadow-md border-secondary border group flex flex-col gap-1 cursor-pointer">
+    <div onClick={handleClick} className="bg-primary relative rounded-xl w-auto shadow-md border-secondary border-2 group flex flex-col gap-1 cursor-pointer">
       {/* Sale Label */}
       <div className="absolute -top-3 -left-1 w-28 h-20 z-10 flex items-start justify-start"
         style={{

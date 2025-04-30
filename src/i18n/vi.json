@@ -15,9 +15,9 @@
         "notregister": "Chưa có tài khoản?",
         "password": "Mật khẩu"
     },
-    "categories": 
+    "product": 
     {
-      "all_products": "Tất cả sản phẩm",
+      "all": "Tất cả sản phẩm",
       "voucher_service": "Voucher, dịch vụ",
       "food_beverage": "Thực phẩm, đồ uống",
       "sports_travel": "Thể thao, du lịch",
@@ -25,8 +25,126 @@
       "health": "Sức khỏe",
       "home_life": "Nhà cửa, đời sống",
       "mom_baby": "Mẹ và Bé",
-      "beauty": "Làm đẹp"
-    }
+      "beauty": "Làm đẹp",
+      "relevant": "Liên quan",
+      "newest": "Mới nhất",
+      "best_selling": "Bán chạy",
+      "Low_to_high": "Giá thấp đến cao",
+      "High_to_low": "Giá cao đến thấp",
+      "sort": "Sắp xếp theo"
+    },
+    "subcategory": {
+      "course": "Khóa học",
+      "restaurant": "Nhà hàng và ăn uống",
+      "travel": "Du lịch và khách sạn",
+      "entertainment": "Sự kiện, giải trí và thể thao",
+      "health_beauty": "Sức khỏe, làm đẹp",
 
+      "functional_food": "Thực phẩm chức năng",
+      "drinks": "Đồ uống",
+      "canned": "Thực phẩm khô, đóng hộp",
+      "fresh": "Thực phẩm tươi sống và đông lạnh",
+      "ingredients": "Nguyên liệu nấu ăn",
+      "dairy": "Thực phẩm từ sữa và đồ lạnh",
+      "healthy_snacks": "Ăn vặt lành mạnh",
+
+      "sport_shoes": "Giày thể thao",
+      "sport_fashion": "Thời trang thể thao",
+      "sport_accessories": "Phụ kiện thể thao",
+      "suitcase": "Vali",
+      "travel_bag": "Túi du lịch",
+      "travel_gear": "Phụ kiện du lịch và dã ngoại",
+
+      "smart_devices": "Thiết bị đeo thông minh",
+      "electronic_accessories": "Phụ kiện điện tử",
+
+      "massage_tools": "Dụng cụ massage và trị liệu",
+      "health_monitoring": "Dụng cụ theo dõi sức khỏe",
+      "first_aid": "Dụng cụ sơ cứu",
+      "ear_nose_throat": "Chăm sóc tai, mũi, họng",
+      "mental_support": "Hỗ trợ cải thiện tinh thần",
+      "sex_support": "Hỗ trợ tình dục",
+
+      "kitchen_tools": "Dụng cụ nhà bếp",
+      "home_care": "Chăm sóc nhà cửa",
+      "home_decor": "Trang trí nhà cửa",
+      "furniture": "Nội thất",
+      "sleep_care": "Chăm sóc giấc ngủ",
+
+      "diapers": "Tã, bỉm",
+      "baby_toys": "Đồ chơi cho bé",
+      "baby_bath": "Dụng cụ phòng tắm, chăm sóc cơ thể bé",
+      "baby_sleep": "Đồ dùng phòng ngủ, chăm sóc giấc ngủ bé",
+      "baby_protection": "Đồ dùng bảo vệ bé",
+      "baby_health": "Chăm sóc sức khỏe bé",
+      "mom_nutrition": "Dinh dưỡng cho mẹ",
+      "mom_care": "Chăm sóc mẹ bầu và sau sinh",
+
+      "body_care": "Chăm sóc cơ thể",
+      "facial_care": "Chăm sóc da mặt",
+      "hair_care": "Chăm sóc tóc",
+      "dental_care": "Chăm sóc răng miệng",
+      "women_care": "Chăm sóc phụ nữ",
+      "men_care": "Chăm sóc nam giới",
+      "makeup": "Trang điểm",
+      "beauty_tools": "Dụng cụ, phụ kiện làm đẹp",
+
+      "other": "Khác"
+    },
+    "home":
+    {
+      "product_category":"Danh mục sản phẩm",
+      "only": "Chỉ từ",
+      "buy_now": "Mua ngay",
+      "healthExperts": "Chuyên gia sức khỏe",
+      "Dr": "BS",
+      "Suncream": "Kem chống nắng",
+      "FunctionalFood": "Thực phẩm chức năng",
+      "Vitamin_Mineral": "Vitamin & khoáng chất",
+      "SkinCare": "Chăm sóc da",
+      "Medical_equipment": "Thiết bị y tế",
+      "Thermometer": "Nhiệt kế",
+      "Dental_care": "Chăm sóc răng miệng",
+      "Toothpaste": "Kem đánh răng",
+      "promotions": "Khuyến mãi",
+      "obstetrics": "Chuyên Khoa Phụ Sản",
+      "general_surgery": "Chuyên Khoa Ngoại Tổng Hợp",
+      "nutrition": "Chuyên Khoa Dinh Dưỡng"
+    },
+    "banner":
+    {
+      "Search": "Tìm kiếm",
+      "Search_placeholder": "Tìm kiếm mọi thứ trên Hathyo",
+      "quotes1": "Khi chúng ta cố gắng để tốt hơn ta của hiện tại, mọi thứ xung quanh ta cũng tốt hơn",
+      "author1":  "Paulo Coelho",
+      "quotes2": "Những công dân khỏe mạnh là tài sản lớn nhất mà bất kỳ quốc gia nào cũng có được",
+      "author2":  "Winston Churchill",
+      "quotes33": "Bắt đầu từ hôm nay hay một ngày nào đó là do bạn",
+      "author3":  "Paolo Coelho",
+      "quotes4": "Sức khỏe là tài sản lớn nhất của con người",
+      "author4":  "Virgil"
+    },
+    "feedback":
+    {
+      "suggestions": "Đề xuất và góp ý",
+      "suggestions_placeholder": "Nhập góp ý của bạn tại đây",
+      "name_placeholder": "Nhập tên của bạn",
+      "email_placeholder": "Nhập email của bạn",
+      "send_suggestion": "Gửi góp ý",
+      "thank_you": "Cảm ơn Bạn đã đóng góp ý kiến quý báu, giúp chúng tôi không ngừng cải thiện dịch vụ. Chúc bạn mỗi ngày đều tràn ngập niềm vui và luôn khỏe mạnh!",
+      "title": "Góp Ý và Phản Hồi của Bạn Là Điều Quan Trọng!",
+      "p1": "Hathyo không chỉ mong bạn hài lòng với sản phẩm mà còn muốn bạn có trải nghiệm mua sắm thật trọn vẹn. Những góp ý của bạn chính là động lực để chúng tôi ngày càng hoàn thiện hơn. Vì vậy, đừng ngại chia sẻ nếu bạn có bất kỳ ý kiến hay phản hồi nào nhé!",
+      "p2": "Nếu cần thêm thông tin hoặc có thắc mắc, hãy liên hệ ngay với chúng tôi. Đội ngũ Hathyo luôn sẵn sàng hỗ trợ bạn!"
+    },
+    "footer": {
+    "title": "Hathyo",
+    "desc": "Cùng bạn vui khỏe hơn với các sản phẩm lành mạnh và khoa học.",
+    "about": "Về Hathyo",
+    "intro": "Giới thiệu Hathyo",
+    "tools": "Công cụ vui vẻ Hathyo",
+    "career": "Tuyển dụng Hathyo",
+    "user": "Người dùng",
+    "copyright": "© 2025 Hathyo. Mọi quyền được bảo lưu."
+  }
 }
   

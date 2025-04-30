@@ -126,7 +126,7 @@ const ProductDetailPage = () => {
       <div className="container mx-auto mt-8 px-4">
         <div className="bg-primary border-secondary border-2 p-6 rounded shadow flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <img src="/src/assets/images/miniLogo.webp" className="w-16 h-16 rounded-full" />
+            <img src="/images/miniLogo.webp" className="w-16 h-16 rounded-full" />
             <div>
               <h2 className="font-bold text-lg text-textPrimary">Hathyo</h2>
               <div className="flex gap-2 mt-2">
