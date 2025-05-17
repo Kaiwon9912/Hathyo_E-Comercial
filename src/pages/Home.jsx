@@ -21,7 +21,7 @@ function Home() {
         {productData.map((product, index) => {
           const safeProduct = {
             ...product,
-            image: product.image || "/src/assets/images/default-product.jpg", // default fallback
+            image: product.image || "https://icons.veryicon.com/png/o/application/applet-1/product-17.png", 
           };
           return (
             <ProductCard

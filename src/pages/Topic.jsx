@@ -14,7 +14,7 @@ export default function TopicPage() {
       setPosts(postsByCategory[category] || []);
       setLoading(false);
     } else {
-      // nếu URL không đúng category thì set về mặc định
+
       setSelectedCategory(categories[0]);
       setPosts(postsByCategory[categories[0]] || []);
       setLoading(false);

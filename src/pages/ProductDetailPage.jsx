@@ -69,8 +69,8 @@ const ProductDetailPage = () => {
           <p className="font-medium mb-2 text-textSecondary">{product.option.name}</p>
           <div className="flex flex-wrap gap-2">
             {product.option.values.map((variant, idx) => {
-              const colorKey = Object.keys(variant)[0]; // Lấy key của mỗi đối tượng trong array (ví dụ: "color1")
-              const colorValue = variant[colorKey]; // Lấy giá trị của key (ví dụ: "Hồng (3-6 lb)")
+              const colorKey = Object.keys(variant)[0]; 
+              const colorValue = variant[colorKey]; 
 
               return (
                 <button

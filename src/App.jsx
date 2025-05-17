@@ -9,7 +9,7 @@ import './styles/nprogress.css';
 import ProductDetail from './pages/ProductDetailPage';
 import TopicPage from './pages/Topic';
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
-import AuthPage from './pages/AuthPage';
+
 import { ThemeProvider } from './contexts/ThemeContext';  
 function App() {
   return (
@@ -26,7 +26,6 @@ function App() {
             <Route path="/detail" element={<ProductDetail />} />
             <Route path="/topic/:category" element={<TopicPage />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/login" element={<AuthPage/>} />
           </Routes>
         </main>
         <Footer />

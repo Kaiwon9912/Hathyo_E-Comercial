@@ -50,7 +50,7 @@ function Footer() {
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-white">
                   {t('footer.career')}
-                </Link>
+                </Link> 
               </li>
             </ul>
           </div>

@@ -145,6 +145,15 @@
     "career": "Tuyển dụng Hathyo",
     "user": "Người dùng",
     "copyright": "© 2025 Hathyo. Mọi quyền được bảo lưu."
-  }
+  },
+      "login": {
+      "login": "Đăng nhập",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "or:":"Chưa có tài khoản ?",
+      "already": "Đã có tài khoản ?",
+      "register": "Đăng ký"
+
+    }
 }
   

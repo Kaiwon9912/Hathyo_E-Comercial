@@ -140,8 +140,15 @@
         "career": "Careers at Hathyo",
         "user": "User",
         "copyright": "© 2025 Hathyo. All rights reserved."
-      }
-    
-    
+      },
+    "login": {
+      "login": "Login",
+      "email": "Email",
+      "password": "Password",
+      "or": "Dont have an account?",
+      "already": "Already have an account?",
+      "register": "Register"
+   
+    }
   }
   

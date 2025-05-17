@@ -57,7 +57,7 @@ function Product() {
 </div>
           </div>
 
-          {/* Nội dung bên phải */}
+       
           <div className="col-span-1 md:col-span-5">
             <div className="space-x-2 font-semibold bg-slate-100 p-2 flex text-xs justify-end items-center gap-2 rounded-lg mb-8 ">
           
